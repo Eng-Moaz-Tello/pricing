@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
 
 const links = [
-  { to: '/projects', label: 'المشاريع' },
   { to: '/incoming-entities', label: 'الجهات الواردة' },
   { to: '/contractors', label: 'المتعهدين' },
-  { to: '/items', label: 'البنود' },
   { to: '/related-works', label: 'الأعمال المرتبطة' },
+  { to: '/items', label: 'البنود' },
+  { to: '/projects', label: 'المشاريع' },
+  { to: '/projects/quick', label: 'إدخال مشروع فوري' },
 ]
 
 export default function Sidebar() {
@@ -16,6 +17,7 @@ export default function Sidebar() {
           <NavLink
             key={l.to}
             to={l.to}
+            end
             className={({ isActive }) =>
               `px-4 py-2.5 rounded-lg text-sm font-medium transition ${
                 isActive ? 'bg-primary text-white' : 'text-charcoal hover:bg-mint'

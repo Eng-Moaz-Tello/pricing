@@ -6,7 +6,7 @@ import IncomingEntitiesPage from './pages/IncomingEntitiesPage'
 import ContractorsPage from './pages/ContractorsPage'
 import ItemsPage from './pages/ItemsPage'
 import RelatedWorksPage from './pages/RelatedWorksPage'
-
+import QuickProjectPage from './pages/QuickProjectPage'
 export default function App() {
   return (
     <HashRouter>
@@ -20,6 +20,7 @@ export default function App() {
           <Route path="/contractors" element={<ContractorsPage />} />
           <Route path="/items" element={<ItemsPage />} />
           <Route path="/related-works" element={<RelatedWorksPage />} />
+          <Route path="/projects/quick" element={<QuickProjectPage />} />
         </Route>
       </Routes>
     </HashRouter>
